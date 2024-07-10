@@ -1,0 +1,53 @@
+body{
+    height: 2000px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+
+}
+.feed{
+    background-color: rgb(234,234,234);
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+}
+.header{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.date{
+    color: gray;
+}
+.imagen{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: black;
+}
+.imagen >img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.footer{
+    padding: 5px;
+}
+.imagen:hover > img{
+    object-fit: cover;
+}
